@@ -3,16 +3,32 @@ import './App.css';
 import Header from './Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-import Client from './Client';
-import Tmwdata from './Tmwdata'
+import Main from './Main';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from './Login';
+import { UserProvider } from './UserContext';
 
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <Header />
-      <Client />
-    </div>
+    <Router>
+      <UserProvider>
+        <Header />
+        <div className="App">
+          <Switch>
+
+            <Route path="/" exact component={Login} />
+            <Route path="/Main" exact component={Main} />
+
+
+          </Switch>
+        </div>
+      </UserProvider>
+
+    </Router>
   );
 }
 

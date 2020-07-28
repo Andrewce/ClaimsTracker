@@ -1,37 +1,40 @@
 import React from 'react'
 
 export default function Tmwdata() {
+
+
+
     return (
         <div className="container">
             <div className="row">
-                <div className="mt-5">
+                <div className="">
                     <label className="justify-content-center col-md-2">
-                        Truckmate Fb
+                        Sample Text
                     </label>
                     <input type="text" className="col-md-2" />
 
                     <label className="justify-content-center col-md-2">
-                        FB Number
+                        Sample Text
                     </label>
                     <input type="text" className="col-md-2" />
 
                     <label className="justify-content-center col-md-2">
-                        Client Claim Number
+                        Sample Text
                     </label>
                     <input type="text" className="col-md-2 " />
 
                     <label className="justify-content-center col-md-2 mt-1 ">
-                        Shipper Name
+                        Sample Text
                     </label>
                     <input type="text" className="col-md-2 " />
 
                     <label className="justify-content-center col-md-2">
-                        Agent Name
+                        Sample Text
                     </label>
                     <input type="text" className="col-md-2 " />
 
                     <label className="justify-content-center col-md-2">
-                        Consignee
+                        Sample Text
                     </label>
                     <input type="text" className="col-md-2 " />
                 </div>

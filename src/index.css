@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.gray {
+  background-color: gray;
+}
+.bg-color {
+  background-color: #a9ded8;
+}
+
+.fade-in {
+  animation: fadeIn  0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
