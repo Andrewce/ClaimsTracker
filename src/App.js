@@ -7,6 +7,7 @@ import Main from './Main';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './Login';
 import { UserProvider } from './UserContext';
+import ListClaims from './ListClaims';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
 
             <Route path="/" exact component={Login} />
             <Route path="/Main" exact component={Main} />
+            <Route path="/ListClaims" exact component={ListClaims} />
+
 
 
           </Switch>

@@ -68,3 +68,12 @@ align-self: center;
   height: 50px;
 
 }
+
+.Header-User:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.bg-color {
+  background-color:  rgb(148, 197, 231);
+}

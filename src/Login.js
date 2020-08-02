@@ -3,8 +3,6 @@ import './App.css';
 import { UserContext } from './UserContext'
 import { Link, Redirect } from 'react-router-dom';
 
-
-
 export default function Login() {
 
     const [users, setUser] = useContext(UserContext)
@@ -45,14 +43,12 @@ export default function Login() {
         }
     }
 
-
-
     return (
         <div className="login">
             <div className="login-items">
                 {users.user ? (<Redirect to="/Main" />)
                     : (
-                        <div>
+                        <div className="">
                             <input type="text" className="form-control" placeholder="Username" required="required" onChange={UpdateUser} />
                             <input type="password" className="form-control" placeholder="Password" required="required" onChange={UpdatetPassword} />
                         </div>
